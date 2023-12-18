@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    background-color: #01131c;
+    background-color: #003b59;
     align-items: center;
     color: #e8e8e8;
   }
@@ -21,6 +21,8 @@
     text-decoration: none;
     margin: 0 30px 0 0;
     font-size: 18px;
+    transition: color 0.3s ease;
+    transition: font-size 0.3s ease;
   }
 
   .nav-links a:last-child {
@@ -28,7 +30,8 @@
   }
 
   .nav-links a:hover {
-    color: #ccc;
+    color: #ffffff;
+    font-size: 20px;
   }
 
   .bm-burger-button {
@@ -69,7 +72,11 @@
   .homepage p {
     font-size: 1.4rem;
     color: #243741;
-    margin: 10px 50px;
+    margin: 10px 60px;
+    border: 2px solid #fbfbfb;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgb(137, 137, 137);
   }
 }
 
@@ -146,5 +153,9 @@
     font-size: 1rem;
     color: #243741;
     margin: 10px 30px;
+    border: 2px solid #fbfbfb;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgb(137, 137, 137);
   }
 }
