@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    background-color: #01131c;
+    background-color: #003b59;
     align-items: center;
     color: #e8e8e8;
   }
@@ -21,6 +21,8 @@
     text-decoration: none;
     margin: 0 30px 0 0;
     font-size: 18px;
+    transition: color 0.3s ease;
+    transition: font-size 0.3s ease;
   }
 
   .nav-links a:last-child {
@@ -28,7 +30,8 @@
   }
 
   .nav-links a:hover {
-    color: #ccc;
+    color: #fff;
+    font-size: 20px;
   }
 
   .bm-burger-button {
@@ -41,10 +44,40 @@
     margin: 0 30px;
     font-weight: 300;
     font-size: 26px;
+    cursor: pointer;
   }
 
   .nav-mobile {
     display: none;
+  }
+
+  .homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .homepage h1 {
+    font-size: 3rem;
+    color: #243741;
+    font-weight: 300;
+  }
+
+  .homepage p {
+    font-size: 1.4rem;
+    color: #243741;
+    margin: 10px 80px;
+    border: 2px solid #fbfbfb;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgb(137, 137, 137);
+    background-color: rgb(0, 59, 89, 0.3);
   }
 }
 
@@ -69,7 +102,8 @@
     top: 20px;
     left: 10px;
     z-index: 1000;
-    color: #01131c;
+    color: #003b59;
+    cursor: pointer;
   }
 
   .links {
@@ -96,5 +130,34 @@
 
   .bm-item + .bm-item {
     margin-top: 20px;
+  }
+
+  .homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .homepage h1 {
+    font-size: 2rem;
+    color: #243741;
+    font-weight: 300;
+  }
+
+  .homepage p {
+    font-size: 1rem;
+    color: #243741;
+    margin: 10px 30px;
+    border: 2px solid #fbfbfb;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgb(137, 137, 137);
+    background-color: rgb(0, 59, 89, 0.3);
   }
 }

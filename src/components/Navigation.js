@@ -34,12 +34,12 @@ const Navigation = () => {
       top: '36px',
     },
     bmMenu: {
-      background: '#01131c',
+      background: '#003b5999',
       fontSize: '1.15em',
       width: '100%',
     },
     bmBurgerBars: {
-      background: '#01131ce6',
+      background: '#003b59',
       fontSize: '14px',
       height: '4px',
     },
@@ -51,11 +51,11 @@ const Navigation = () => {
       display: 'inline-block',
     },
     bmCrossButton: {
-      height: '30px',
-      width: '30px',
+      height: '40px',
+      width: '40px',
     },
     bmCross: {
-      background: '#bdc3c7',
+      background: '#fffff0',
     },
     bmMenuWrap: {
       width: '100%',
