@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles.css';
+// import imageHomepage from '../images/ref2.jpg';
 
 const Homepage = () => (
   <section className="homepage" id="homepage">
@@ -14,6 +15,7 @@ const Homepage = () => (
       kendini tedavi etme yeteneğini harekete geçirme yöntemi olarak
       tanımlanabilir.
     </p>
+    {/* <img src={imageHomepage} className="img" alt="Description" /> */}
   </section>
 );
 
