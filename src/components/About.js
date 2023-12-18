@@ -2,37 +2,6 @@ import React from 'react';
 import '../styles.css';
 import secondImage from '../images/ref1.gif';
 import firstImage from '../images/ref2.jpg';
-import image1 from '../images/kirec.jpg';
-import image2 from '../images/varis.jpg';
-import image3 from '../images/rom.jpg';
-import image4 from '../images/video1.mp4';
-
-const contentData = [
-  {
-    header: 'Kireçlenme',
-    text: 'Sık kullanılan diz, bilek ve parmak eklemlerinde daha çok görülmekle birlikte bulunan her noktada kireçlenme meydana gelebilir. Kıkırdağın tahr​ip olmasının fazla kilo, eklem bölgesini etkileyen yaralanmalar, kas zayıflığı, romatizmalı hastalıklar gibi pek çok farklı nedeni olabilir. Yakın aile bireylerinizde kireçlenme varsa sizin de kireçlenme sorunu yaşama olasılığınız yükselir çünkü kalıtsal olarak nesilden nesile aktarılan bir problemdir. Refleksoloji sıvıları besleyen sinirlerin görevini daha iyi yerine getirmesini sağlar.',
-    image: image1,
-    alt: 'Description 1',
-  },
-  {
-    header: 'Varis Tedavisi',
-    text: 'Varis tedavisindeki amaç yaşam kalitesini arttırmaktır. Hastalık genellikle iyi huylu seyir gösterip , hastaların çoğunda ameliyat gerekmez ve konservatif tedavi yöntemleriyle iyi sonuçlar alınır. Refleksoloji masaj aleti ile ayak altından uygulanan masaj damarlardaki kan akışını düzenler.',
-    image: image2,
-    alt: 'Description 2',
-  },
-  {
-    header: 'Romatizma',
-    text: 'Romatizma farklı hastalıklara bağlı olarak eklem, kas, kemik ve yumuşak dokularda görülen ağrılar olarak tanımlanabilir.​ Romatizmaya çoğunlukla genetik faktör, eklemin aşırı yıpranması, fazla kilo, spor yaralanmaları ve travmalar sebep olabilir. Ayak altından uygulanan masaj ve tensler yardımıyla vücuda gönderilen akımlar sayesinde ağrıların azalmasına yardımcı olur.',
-    image: image3,
-    alt: 'Description for Romatizma',
-  },
-  {
-    header: 'Selülit Tedavisi',
-    text: 'Selülit; özellikle kadınlarda görülen ve adiposit adı verilen derialtı yağ hücre gruplarının kan ve lenfatik dolaşımı bozmasıyla oluşan bir yapıdır. Deride çöküntülere ve portakal kabuğu görüntülerine neden olur. Selülit oluşumu dolaşım bozukluğu ile başlar. Refleksoloji masaj aleti sayesinde vücuttaki kan dolaşımı düzenlenir ve tahrip olan bölgenin onarımını sağlar.',
-    video: image4,
-    alt: 'Description for Selülit Tedavisi',
-  },
-];
 
 const About = () => (
   <section className="about" id="about">
@@ -93,25 +62,6 @@ const About = () => (
           sağ tarafta yer alan organlar ise sağ ayakta temsil edilmektedir.
         </p>
       </div>
-    </div>
-    <div className="diseases">
-      <h2>Refleksoloji cihazı hangi hastalıklarda uygulanabilir?</h2>
-      {contentData.map((data) => (
-        <div key={data.header} className="content">
-          <div className="text">
-            <h3>{data.header}</h3>
-            <p>{data.text}</p>
-          </div>
-          <div className="media">
-            {data.image && <img src={data.image} alt={data.alt} />}
-            {data.video && (
-              <video src={data.video} alt={data.alt} controls>
-                <track kind="captions" srcLang="en" label="English" />
-              </video>
-            )}
-          </div>
-        </div>
-      ))}
     </div>
   </section>
 );
