@@ -45,6 +45,8 @@
     font-weight: 300;
     font-size: 26px;
     cursor: pointer;
+    color: #e8e8e8;
+    text-decoration: none;
   }
 
   .nav-mobile {
@@ -84,7 +86,7 @@
     display: flex;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* gap: 20px; */
+    align-items: center;
     margin: 20px;
     justify-content: space-between;
     margin-bottom: 30px;
@@ -94,7 +96,6 @@
     display: flex;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* gap: 20px; */
     margin: 20px;
     justify-content: space-between;
     margin-bottom: 30px;
@@ -116,7 +117,7 @@
     margin: auto;
   }
 
-  .text h2 {
+  h2 {
     text-decoration: underline;
     color: #003b59;
   }
@@ -127,8 +128,76 @@
     margin-inline: 10px;
   }
 
-  .about {
+  .about,
+  .diseases,
+  .device {
     padding-top: 50px;
+  }
+
+  .diseases {
+    text-align: center;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid rgb(0, 59, 89, 0.2);
+    border-width: 100%;
+  }
+
+  .content img {
+    width: 70%;
+    border-radius: 10px;
+    align-self: center;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .content img:hover {
+    transform: scale(1.1);
+  }
+
+  .content video {
+    width: 80%;
+    border-radius: 10px;
+    align-self: center;
+  }
+
+  .line {
+    color: #003b59;
+    margin: 100px;
+  }
+
+  .diseases h2 {
+    text-decoration: underline;
+    color: #003b59;
+  }
+
+  .content.no-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 50px;
+  }
+
+  .device h2 {
+    text-align: center;
+  }
+
+  .device-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .device img,
+  video {
+    width: 40%;
+    border-radius: 10px;
+    display: flex;
   }
 }
 
