@@ -76,6 +76,12 @@ const Navigation = () => {
             <Link to="/about" onClick={() => scrollToSection('about')}>
               Refleksoloji
             </Link>
+            <Link to="/diseases" onClick={() => scrollToSection('diseases')}>
+              Hangi Hastalıklarda Etkilidir?
+            </Link>
+            <Link to="/device" onClick={() => scrollToSection('device')}>
+              Cihazımız
+            </Link>
             <Link to="/contact" onClick={() => scrollToSection('contact')}>
               Bize Ulaşın
             </Link>
