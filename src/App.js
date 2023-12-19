@@ -6,10 +6,12 @@ import About from './components/About';
 import Diseases from './components/Diseases';
 import Device from './components/Device';
 import ContactForm from './components/Contact';
+import GoUpButton from './components/GoUpButton';
 
 const App = () => (
   <Router>
     <div className="App">
+      <GoUpButton />
       <Navigation />
       <Homepage />
       <About />
