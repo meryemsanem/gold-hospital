@@ -67,7 +67,7 @@ const Navigation = () => {
       <div className="navigation-wrapper">
         <nav className="nav-links">
           <div className="logo">
-            <h2 className="my-logo">Gold Hospital</h2>
+            <h2 className="my-logo">Gold Hospitals</h2>
           </div>
           <div className="links">
             <Link to="/homepage" onClick={() => scrollToSection('homepage')}>
@@ -83,7 +83,7 @@ const Navigation = () => {
               Cihazımız
             </Link>
             <Link to="/contact" onClick={() => scrollToSection('contact')}>
-              Bize Ulaşın
+              İletişim
             </Link>
           </div>
         </nav>
@@ -96,7 +96,7 @@ const Navigation = () => {
             Refleksoloji
           </Link>
           <Link to="/contact" onClick={() => scrollToSection('contact')}>
-            Bize Ulaşın
+            İletişim
           </Link>
         </Menu>
       </div>

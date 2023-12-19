@@ -5,6 +5,7 @@ import Homepage from './components/Homepage';
 import About from './components/About';
 import Diseases from './components/Diseases';
 import Device from './components/Device';
+import ContactForm from './components/Contact';
 
 const App = () => (
   <Router>
@@ -14,6 +15,7 @@ const App = () => (
       <About />
       <Diseases />
       <Device />
+      <ContactForm />
     </div>
   </Router>
 );
