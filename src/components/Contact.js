@@ -86,6 +86,8 @@ const ContactForm = () => {
                     onChange={(e) => setFormData({ ...formData, region: e.target.value })}
                     required
                   >
+                    {' '}
+                    <option value="">Bir bölge seçin</option>
                     <option value="Region 1">Lefkoşa</option>
                     <option value="Region 2">Gazimağusa</option>
                     <option value="Region 2">Girne</option>
