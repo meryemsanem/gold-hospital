@@ -1,5 +1,5 @@
 import { slide as Menu } from 'react-burger-menu';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import '../styles.css';
 
@@ -70,34 +70,79 @@ const Navigation = () => {
             <h2 className="my-logo">Gold Hospitals</h2>
           </div>
           <div className="links">
-            <Link to="/homepage" onClick={() => scrollToSection('homepage')}>
+            <NavLink
+              to="/homepage"
+              onClick={() => scrollToSection('homepage')}
+              activeClassName="active"
+            >
               Ana Sayfa
-            </Link>
-            <Link to="/about" onClick={() => scrollToSection('about')}>
+            </NavLink>
+            <NavLink
+              to="/about"
+              onClick={() => scrollToSection('about')}
+              activeClassName="active"
+            >
               Refleksoloji
-            </Link>
-            <Link to="/diseases" onClick={() => scrollToSection('diseases')}>
+            </NavLink>
+            <NavLink
+              to="/diseases"
+              onClick={() => scrollToSection('diseases')}
+              activeClassName="active"
+            >
               Hangi Hastalıklarda Etkilidir?
-            </Link>
-            <Link to="/device" onClick={() => scrollToSection('device')}>
+            </NavLink>
+            <NavLink
+              to="/device"
+              onClick={() => scrollToSection('device')}
+              activeClassName="active"
+            >
               Cihazımız
-            </Link>
-            <Link to="/contact" onClick={() => scrollToSection('contact')}>
+            </NavLink>
+            <NavLink
+              to="/contact"
+              onClick={() => scrollToSection('contact')}
+              activeClassName="active"
+            >
               İletişim
-            </Link>
+            </NavLink>
           </div>
         </nav>
         <Menu styles={styles} isOpen={isOpen} onStateChange={handleStateChange}>
-          <Link to="/homepage" onClick={() => scrollToSection('homepage')}>
-            {' '}
+          <NavLink
+            to="/homepage"
+            onClick={() => scrollToSection('homepage')}
+            activeClassName="active"
+          >
             Ana Sayfa
-          </Link>
-          <Link to="/about" onClick={() => scrollToSection('about')}>
+          </NavLink>
+          <NavLink
+            to="/about"
+            onClick={() => scrollToSection('about')}
+            activeClassName="active"
+          >
             Refleksoloji
-          </Link>
-          <Link to="/contact" onClick={() => scrollToSection('contact')}>
+          </NavLink>
+          <NavLink
+            to="/diseases"
+            onClick={() => scrollToSection('diseases')}
+            activeClassName="active"
+          >
+            Hangi Hastalıklarda Etkilidir?
+          </NavLink>
+          <NavLink
+            to="/device"
+            onClick={() => scrollToSection('device')}
+            activeClassName="active"
+          >
+            Cihazımız
+          </NavLink>
+          <NavLink
+            to="/contact"
+            onClick={() => scrollToSection('contact')}
+            activeClassName="active"
+          >
             İletişim
-          </Link>
+          </NavLink>
         </Menu>
       </div>
     </div>
