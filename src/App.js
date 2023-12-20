@@ -7,6 +7,7 @@ import Diseases from './components/Diseases';
 import Device from './components/Device';
 import ContactForm from './components/Contact';
 import GoUpButton from './components/GoUpButton';
+import Footer from './components/Footer';
 
 const App = () => (
   <Router>
@@ -18,6 +19,7 @@ const App = () => (
       <Diseases />
       <Device />
       <ContactForm />
+      <Footer />
     </div>
   </Router>
 );
