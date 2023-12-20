@@ -27,25 +27,27 @@ const Navigation = () => {
 
   const styles = {
     bmBurgerButton: {
-      position: 'fixed',
-      width: '36px',
       height: '30px',
       right: '36px',
-      top: '36px',
+      top: '18px',
     },
     bmMenu: {
-      background: '#003b5999',
+      background: '#003b59',
       fontSize: '1.15em',
       width: '100%',
+      height: '100vh',
     },
     bmBurgerBars: {
-      background: '#003b59',
+      background: isOpen ? 'transparent' : 'whitesmoke',
       fontSize: '14px',
       height: '4px',
+      width: '40px',
+      // right: '36px',
     },
     bmItemList: {
       color: '#b8b7ad',
       display: 'flex',
+      top: '0',
     },
     bmItem: {
       display: 'inline-block',
@@ -107,43 +109,51 @@ const Navigation = () => {
             </NavLink>
           </div>
         </nav>
-        <Menu styles={styles} isOpen={isOpen} onStateChange={handleStateChange}>
-          <NavLink
-            to="/homepage"
-            onClick={() => scrollToSection('homepage')}
-            activeClassName="active"
-          >
-            Ana Sayfa
-          </NavLink>
-          <NavLink
-            to="/about"
-            onClick={() => scrollToSection('about')}
-            activeClassName="active"
-          >
-            Refleksoloji
-          </NavLink>
-          <NavLink
-            to="/diseases"
-            onClick={() => scrollToSection('diseases')}
-            activeClassName="active"
-          >
-            Hangi Hastalıklarda Etkilidir?
-          </NavLink>
-          <NavLink
-            to="/device"
-            onClick={() => scrollToSection('device')}
-            activeClassName="active"
-          >
-            Cihazımız
-          </NavLink>
-          <NavLink
-            to="/contact"
-            onClick={() => scrollToSection('contact')}
-            activeClassName="active"
-          >
-            İletişim
-          </NavLink>
-        </Menu>
+        <div className="navigation-wrapper">
+          <div className="mobile">
+            <Menu
+              styles={styles}
+              isOpen={isOpen}
+              onStateChange={handleStateChange}
+            >
+              <NavLink
+                to="/homepage"
+                onClick={() => scrollToSection('homepage')}
+                activeClassName="active"
+              >
+                Ana Sayfa
+              </NavLink>
+              <NavLink
+                to="/about"
+                onClick={() => scrollToSection('about')}
+                activeClassName="active"
+              >
+                Refleksoloji
+              </NavLink>
+              <NavLink
+                to="/diseases"
+                onClick={() => scrollToSection('diseases')}
+                activeClassName="active"
+              >
+                Hangi Hastalıklarda Etkilidir?
+              </NavLink>
+              <NavLink
+                to="/device"
+                onClick={() => scrollToSection('device')}
+                activeClassName="active"
+              >
+                Cihazımız
+              </NavLink>
+              <NavLink
+                to="/contact"
+                onClick={() => scrollToSection('contact')}
+                activeClassName="active"
+              >
+                İletişim
+              </NavLink>
+            </Menu>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -1,5 +1,7 @@
 import React from 'react';
 import '../styles.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const Homepage = () => {
   const handleClick = () => {
@@ -21,7 +23,9 @@ const Homepage = () => {
         tanımlanabilir.
       </p>
       <button type="button" className="info" onClick={handleClick}>
-        Bilgi Almak İstiyorum
+        Gold Hospitals&apos;a Ulaşın
+        {' '}
+        <FontAwesomeIcon icon={faPhone} />
       </button>
     </section>
   );
