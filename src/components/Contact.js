@@ -3,7 +3,7 @@ import { useForm } from '@formspree/react';
 import '../styles.css';
 
 const ContactForm = () => {
-  const [state, handleSubmit] = useForm('xwkgeoyw');
+  const [state, handleSubmit] = useForm('xleqrleo');
   const [formData, setFormData] = useState({
     name: '',
     region: '',
@@ -90,10 +90,10 @@ const ContactForm = () => {
                     <option value="">Bir bölge seçin</option>
                     <option value="Region 1">Lefkoşa</option>
                     <option value="Region 2">Gazimağusa</option>
-                    <option value="Region 2">Girne</option>
-                    <option value="Region 2">Güzelyurt</option>
-                    <option value="Region 2">Lefke</option>
-                    <option value="Region 2">İskele</option>
+                    <option value="Region 3">Girne</option>
+                    <option value="Region 4">Güzelyurt</option>
+                    <option value="Region 5">Lefke</option>
+                    <option value="Region 6">İskele</option>
                   </select>
                 </label>
               </div>
