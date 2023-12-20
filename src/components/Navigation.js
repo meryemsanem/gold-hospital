@@ -1,5 +1,5 @@
 import { slide as Menu } from 'react-burger-menu';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import '../styles.css';
 
@@ -27,25 +27,27 @@ const Navigation = () => {
 
   const styles = {
     bmBurgerButton: {
-      position: 'fixed',
-      width: '36px',
       height: '30px',
       right: '36px',
-      top: '36px',
+      top: '18px',
     },
     bmMenu: {
-      background: '#003b5999',
+      background: '#003b59',
       fontSize: '1.15em',
       width: '100%',
+      height: '100vh',
     },
     bmBurgerBars: {
-      background: '#003b59',
+      background: isOpen ? 'transparent' : 'whitesmoke',
       fontSize: '14px',
       height: '4px',
+      width: '40px',
+      // right: '36px',
     },
     bmItemList: {
       color: '#b8b7ad',
       display: 'flex',
+      top: '0',
     },
     bmItem: {
       display: 'inline-block',
@@ -67,38 +69,91 @@ const Navigation = () => {
       <div className="navigation-wrapper">
         <nav className="nav-links">
           <div className="logo">
-            <h2 className="my-logo">Gold Hospital</h2>
+            <h2 className="my-logo">Gold Hospitals</h2>
           </div>
           <div className="links">
-            <Link to="/homepage" onClick={() => scrollToSection('homepage')}>
+            <NavLink
+              to="/homepage"
+              onClick={() => scrollToSection('homepage')}
+              activeClassName="active"
+            >
               Ana Sayfa
-            </Link>
-            <Link to="/about" onClick={() => scrollToSection('about')}>
+            </NavLink>
+            <NavLink
+              to="/about"
+              onClick={() => scrollToSection('about')}
+              activeClassName="active"
+            >
               Refleksoloji
-            </Link>
-            <Link to="/diseases" onClick={() => scrollToSection('diseases')}>
+            </NavLink>
+            <NavLink
+              to="/diseases"
+              onClick={() => scrollToSection('diseases')}
+              activeClassName="active"
+            >
               Hangi Hastalıklarda Etkilidir?
-            </Link>
-            <Link to="/device" onClick={() => scrollToSection('device')}>
+            </NavLink>
+            <NavLink
+              to="/device"
+              onClick={() => scrollToSection('device')}
+              activeClassName="active"
+            >
               Cihazımız
-            </Link>
-            <Link to="/contact" onClick={() => scrollToSection('contact')}>
-              Bize Ulaşın
-            </Link>
+            </NavLink>
+            <NavLink
+              to="/contact"
+              onClick={() => scrollToSection('contact')}
+              activeClassName="active"
+            >
+              İletişim
+            </NavLink>
           </div>
         </nav>
-        <Menu styles={styles} isOpen={isOpen} onStateChange={handleStateChange}>
-          <Link to="/homepage" onClick={() => scrollToSection('homepage')}>
-            {' '}
-            Ana Sayfa
-          </Link>
-          <Link to="/about" onClick={() => scrollToSection('about')}>
-            Refleksoloji
-          </Link>
-          <Link to="/contact" onClick={() => scrollToSection('contact')}>
-            Bize Ulaşın
-          </Link>
-        </Menu>
+        <div className="navigation-wrapper">
+          <div className="mobile">
+            <Menu
+              styles={styles}
+              isOpen={isOpen}
+              onStateChange={handleStateChange}
+            >
+              <NavLink
+                to="/homepage"
+                onClick={() => scrollToSection('homepage')}
+                activeClassName="active"
+              >
+                Ana Sayfa
+              </NavLink>
+              <NavLink
+                to="/about"
+                onClick={() => scrollToSection('about')}
+                activeClassName="active"
+              >
+                Refleksoloji
+              </NavLink>
+              <NavLink
+                to="/diseases"
+                onClick={() => scrollToSection('diseases')}
+                activeClassName="active"
+              >
+                Hangi Hastalıklarda Etkilidir?
+              </NavLink>
+              <NavLink
+                to="/device"
+                onClick={() => scrollToSection('device')}
+                activeClassName="active"
+              >
+                Cihazımız
+              </NavLink>
+              <NavLink
+                to="/contact"
+                onClick={() => scrollToSection('contact')}
+                activeClassName="active"
+              >
+                İletişim
+              </NavLink>
+            </Menu>
+          </div>
+        </div>
       </div>
     </div>
   );
