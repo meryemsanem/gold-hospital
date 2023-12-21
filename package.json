@@ -1,5 +1,6 @@
 {
   "name": "gold-hospital",
+  "homepage": "https://goldhospitals.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
