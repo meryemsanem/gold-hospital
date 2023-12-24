@@ -435,7 +435,7 @@
   }
 
   .diseases {
-    padding-top: 70px;
+    padding-top: 50px;
   }
 
   .device {
@@ -519,7 +519,6 @@
   .text p,
   li {
     font-size: 16px;
-    margin-inline: 20px;
   }
 
   .device img,
@@ -528,6 +527,10 @@
     border-radius: 10px;
     display: flex;
     margin: 10px auto;
+  }
+
+  .video1 {
+    width: 80%;
   }
 
   .contact-container {
