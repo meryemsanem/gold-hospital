@@ -521,6 +521,10 @@
     font-size: 16px;
   }
 
+  .text p {
+    margin-inline: 20px;
+  }
+
   .device img,
   video {
     width: 70%;
