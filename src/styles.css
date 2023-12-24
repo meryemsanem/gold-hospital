@@ -505,20 +505,20 @@
   h2 {
     text-decoration: underline;
     color: #003b59;
-    margin: 20px;
-    font-size: 20px;
+    margin-inline: 10px;
+    font-size: 24px;
   }
 
   .text h3 {
     text-decoration: none;
     color: #003b59;
     margin: 20px;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .text p,
   li {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .text p {
