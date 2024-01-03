@@ -180,7 +180,6 @@
     display: flex;
     flex-direction: column;
     margin: 20px auto;
-    justify-content: center;
     align-items: center;
   }
 
@@ -720,7 +719,8 @@
     font-size: 2rem;
     color: #243741;
     font-weight: 300;
-     /* padding-top: 50px;  */
+
+    /* padding-top: 50px;  */
   }
 
   .homepage p {
