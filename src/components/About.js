@@ -2,6 +2,8 @@ import React from 'react';
 import '../styles.css';
 import secondImage from '../images/ref1.gif';
 import firstImage from '../images/ref2.jpg';
+import facebookVideo from '../images/facebook-video.mp4';
+import footImage from '../images/ayak1.jpg';
 
 const About = () => (
   <section className="about" id="about">
@@ -62,6 +64,17 @@ const About = () => (
           sağ tarafta yer alan organlar ise sağ ayakta temsil edilmektedir.
         </p>
       </div>
+    </div>
+    <div className="media">
+      <video
+        src={facebookVideo}
+        alt={facebookVideo}
+        className="video1"
+        controls
+      >
+        <track kind="captions" srcLang="en" label="English" />
+      </video>
+      <img src={footImage} alt="Foot" className="image-foot" />
     </div>
   </section>
 );

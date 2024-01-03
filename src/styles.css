@@ -178,6 +178,9 @@
   .media {
     justify-content: center;
     display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    align-items: center;
   }
 
   .line {
@@ -356,6 +359,10 @@
   .mobile {
     display: none;
   }
+
+  /* .image-foot img {
+    width: 500px;
+  } */
 }
 
 @media (max-width: 768px) {
@@ -423,7 +430,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 120vh;
     text-align: center;
     background-image: url('images/background.jpg');
     background-repeat: no-repeat;
@@ -435,7 +442,7 @@
   }
 
   .diseases {
-    padding-top: 70px;
+    padding-top: 50px;
   }
 
   .device {
@@ -452,12 +459,13 @@
     font-size: 2rem;
     color: #243741;
     font-weight: 300;
+    padding-top: 70px;
   }
 
   .homepage p {
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: #243741;
-    margin: 10px 30px;
+    margin: 10px 10px;
     border: 2px solid #fbfbfb;
     border-radius: 10px;
     padding: 10px;
@@ -505,20 +513,23 @@
   h2 {
     text-decoration: underline;
     color: #003b59;
-    margin: 20px;
-    font-size: 20px;
+    margin-inline: 10px;
+    font-size: 24px;
   }
 
   .text h3 {
     text-decoration: none;
     color: #003b59;
     margin: 20px;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .text p,
   li {
-    font-size: 16px;
+    font-size: 18px;
+  }
+
+  .text p {
     margin-inline: 20px;
   }
 
@@ -528,6 +539,10 @@
     border-radius: 10px;
     display: flex;
     margin: 10px auto;
+  }
+
+  .video1 {
+    width: 80%;
   }
 
   .contact-container {
@@ -696,7 +711,27 @@
 
 @media (min-width: 200px) and (max-width: 375px) {
   .homepage {
-    padding-top: 150px;
+    /* padding-top: 160px; */
+    height: 150vh;
+  }
+
+  .homepage h1 {
+    font-size: 2rem;
+    color: #243741;
+    font-weight: 300;
+
+    /* padding-top: 50px;  */
+  }
+
+  .homepage p {
+    font-size: 1.3rem;
+    color: #243741;
+    margin: 10px 10px;
+    border: 2px solid #fbfbfb;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgb(137, 137, 137);
+    background-color: rgb(0, 59, 89, 0.3);
   }
 }
 
