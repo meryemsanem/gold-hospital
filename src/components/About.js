@@ -3,6 +3,7 @@ import '../styles.css';
 import secondImage from '../images/ref1.gif';
 import firstImage from '../images/ref2.jpg';
 import facebookVideo from '../images/facebook-video.mp4';
+import footImage from '../images/ayak1.jpg';
 
 const About = () => (
   <section className="about" id="about">
@@ -73,6 +74,7 @@ const About = () => (
       >
         <track kind="captions" srcLang="en" label="English" />
       </video>
+      <img src={footImage} alt="Foot" className="image-foot" />
     </div>
   </section>
 );
